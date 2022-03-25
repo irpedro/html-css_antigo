@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family:"../_fonts/FonteLogo";
+	src: url("computer-font.ttf")
+}
+@font-face {
+	font-family:"FonteDois";
+	src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/*------------Formatação Fotos-------------*/
+#album-fotos{
+	width: 700px;
+	margin: 0px auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+#album-fotos li{
+	width: 200px;
+	height: 200px;
+	float: left;
+	border: 5px solid white;
+	margin: 10px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+#album-fotos li span{
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,0.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+	transition: opacity 0.4s;
+	padding-right: 0px;
+}
+#album-fotos li:hover{
+	transform: scale(1.5);
+	transition: all 0.4s easy-in;
+}
+#album-fotos li:hover span{
+	opacity: 1;
+}
+#foto01{
+	background: url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#foto02{
+	background: url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#foto03{
+	background: url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#foto04{
+	background: url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#foto05{
+	background: url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#foto06{
+	background: url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+/*------------Formatação corpo------------*/
+#corpo-full{
+	padding-right: 15px;
+	border-right: 1px #606060 solid;
+	margin-top: 5px;
+	font-size: 1em;
+}
+#primeiro{
+	margin-bottom: 0px;
+	font: bold 1em 'FonteDois';
+	opacity: 0.5;
+}
+#corpo-full h2{
+	color: #888888;
+	font-size: .6em;
+	font-weight: bolder;
+	opacity: 0.7;
+}
+.baixo{
+	margin-top: 0px;
+	padding-bottom: 15px;
+}
+#corpo-full h3{
+	text-align: right;
+	color: #000000;
+	opacity: 0.6;
+	font-size: .4em;
+	font-weight: bold;
+	font-style: italic;
+}
+#texto{
+    font-size: .6em;
+}
+#rodapetext{
+    font-size: .6em;
+}

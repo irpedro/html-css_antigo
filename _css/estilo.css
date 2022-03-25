@@ -1,1 +1,268 @@
+@charset "UTF-8";
+@font-face {
+	font-family:"FonteLogo";
+	src: url("../_fonts/computer-font.ttf")
+}
+@font-face {
+	font-family:"FonteDois";
+	src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
+body{
+	background-color: #dddddd;
+}
+.separacao{
+	background-color: #dddddd;
+	font: 15pt 'arial';
+	font-weight: bold;
+	opacity: 0.7;
+}
+#interface{
+	width: 900px;
+	background-color: #ffffff;
+	margin: -10px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+}
+p{
+	text-align: justify;
+	font-family: candara;
+	text-indent: 20px;
+}
+a{
+	color: inherit;
+}
+a:visited{
+	color: purple;
+}
+a:hover{
+	color: hotpink;
+}
+a:active{
+	background-color: lightblue;
+}
+/*----------Formatação do cabeçalho-----------*/
+
+#icone{
+	position: absolute;
+	left: 760px;
+	top: 70px;
+}
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+	padding-top: 10px;
+}
+#cabecalho h1{
+	color: #606060;
+	font-family: 'FonteLogo';
+	font-size: 30pt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	padding: 0px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#cabecalho h2{
+	font-family: candara, sans-serif;
+	color: #888888;
+	font-size: 12pt;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	opacity: 0.5;
+}
+
+/*------Formatação de imagens com legendas------*/
+
+.foto-legenda{
+	position: relative;
+	border: 2px solid white;
+	box-shadow: 1px 1px 5px black;
+	width: 515px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.foto-legenda img{
+	width: 100%;
+	height: 100%%;
+	
+}
+.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.7s;
+}
+#titImg{
+	background-color: #000000;
+	text-align: left;
+	color: #ffffff;
+	font-size: 20pt;
+	padding-top: 0px;
+}
+.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*----------Formatação do menu------------*/
+#menu ul{
+    display: flex;
+	list-style: none;
+	text-transform: uppercase;
+}
+#menu li{
+    display: block;
+	background-color: #dddddd;
+	padding: 5px;
+	transition: background-color 0.7s;
+	margin-left: 10px;
+}
+#menu li:hover{
+	background-color: #606060;
+}
+#menu h1{
+	display: none;
+}
+#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+#menu a:hover{
+	color: #ffffff;
+}
+
+/*------------Formatação corpo------------*/
+#corpo{
+	position: relative;
+	display: block;
+	width: 520px;
+	float: left;
+	padding-right: 15px;
+	border-right: 1px #606060 solid;
+	margin-top: 5px;
+}
+#corpo h1#primeiro{
+	margin-bottom: 0px;
+	font-family: 'FonteDois';
+	font-weight: bold;
+	opacity: 0.5;
+}
+#corpo h2{
+	color: #888888;
+	font-size: 10pt;
+	font-weight: bolder;
+	opacity: 0.7;
+}
+.baixo{
+	margin-top: 0px;
+	padding-bottom: 15px;
+}
+#corpo h3{
+	text-align: right;
+	color: #000000;
+	opacity: 0.6;
+	font-size: .6em;
+	font-weight: bold;
+	font-style: italic;
+}
+#corpo video#filme{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/*------------Formatação tabela-------------*/
+#tabelaspec{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#tabelaspec td{
+	border: 1px solid #606060;
+	padding: 8px;
+}
+.esquerda {
+	text-align: right;
+	vertical-align: top;
+	color: #ffffff;
+	background-color: #606060;
+	font-weight: bold;
+}
+.direita{
+	text-align: left;
+	background-color: #cecece;
+}
+#tabelaspec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+/*------------Formatação lateral------------*/
+#lateral{
+	display: block;
+	float: right;
+	width: 330px;
+	background-color: #dddddd;
+	margin: auto;
+	margin-right: 5px;
+	margin-top: 17px;
+	padding: 8px;
+}
+#lateral h1{
+	position: relative;
+	font-family: 'FonteDois';
+	background-color: #dddddd;
+	font-size: 20pt;
+	font-weight: bold;
+	opacity: 0.5;
+}
+#lateral h2{
+	display: block;
+	float: top;
+	background-color: #606060;
+	margin: 0px auto 0px auto;
+	padding: 7px 0px 7px 5px;
+	font-size: 15px;
+	color: #ffffff;
+	text-align: left;
+}
+#filme{
+	width: 100%;
+	margin-bottom: 15px;
+	
+}
+/*------------Formatação rodape-------------*/
+#rodape{
+	clear: both;
+	border-top: 1px #606060 solid;
+}
+#rodapetext{
+	text-align: center;
+}
+/*------------Formatação outros-------------*/
+.text{
+	font-family: candara;
+	font-size: 20px;
+	text-align: justify;
+	text-indent: 20px;
+}
