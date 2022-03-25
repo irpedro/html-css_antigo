@@ -2,7 +2,7 @@
 
 <h3 align="center">Curso Antigo Cursoemvideo HTML/CSS (2014)</h3>
 
-<p align="center">Link:https://irpedro.github.io/Curso_antigo-HTML-CSS/</p>
+<p align="center">Link: https://irpedro.github.io/html-css_antigo/</p>
 
 <hr>
 <h6 align="center">Feito for IrPedro 👋🏻<h6>
